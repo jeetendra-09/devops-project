@@ -3,10 +3,11 @@ pipeline {
   stages {
     stage('stage1') {
       parallel {
-        stage('stage1') {
+        stage('parallel 01') {
           steps {
             sh 'echo "hello jenkins"'
             sh 'echo "hello stage1"'
+            sh 'echo "hello"'
           }
         }
 
